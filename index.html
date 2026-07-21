@@ -341,6 +341,10 @@ tbody tr:hover td{background:var(--bg1)}
         <span class="sb-badge" id="sb-agenda-cnt">0</span>
       </div>
     </div>
+      <div class="sb-item" onclick="showPage('calc')" id="sv-calc">
+        <svg class="sb-icon" viewBox="0 0 16 16" fill="none"><rect x="1.5" y="1.5" width="13" height="13" rx="1.5" stroke="currentColor" stroke-width="1.2"/><path d="M4 5h8M4 8h4M4 11h3" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
+        Calculadora
+      </div>
       <div class="sb-item ia-item" id="sv-ia" onclick="showPage('ia')">
         <svg class="sb-icon" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="6.5" stroke="currentColor" stroke-width="1.2"/><path d="M5.5 9.5c0-1.5 1-2.5 2.5-2.5s2.5 1 2.5 2.5M8 4.5v1.5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
         Asesor IA
@@ -365,12 +369,7 @@ tbody tr:hover td{background:var(--bg1)}
       <div class="sb-item" id="sv-revision" onclick="showClientList('revision')"><div class="sb-dot" style="background:var(--red)"></div>En revisión<span class="sb-badge" id="sb-revision">0</span></div>
     </div>
   </div>
-  <div class="sb-foot">
-    <div class="sb-item" onclick="showPage('calc')" id="sv-calc">
-      <svg class="sb-icon" viewBox="0 0 16 16" fill="none"><rect x="1.5" y="1.5" width="13" height="13" rx="1.5" stroke="currentColor" stroke-width="1.2"/><path d="M4 5h8M4 8h4M4 11h3" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
-      Calculadora
-    </div>
-  </div>
+  <div class="sb-foot"></div>
 </div>
 <div class="main" id="main"></div>
 </div>
@@ -1490,7 +1489,7 @@ Respondé en español.`;
 
 // ⚠️ CAMBIÁ ESTOS DATOS — son tu usuario y contraseña
 const LOGIN_USER='felix';
-const LOGIN_PASS='Balanz2026';
+const LOGIN_PASS='tu_contraseña_acá';
 
 function checkLogin(){
   const stored=sessionStorage.getItem('crm_auth');
